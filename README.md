@@ -26,7 +26,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 |
 
-[GitHub](#github-anchor)
+<a href="#github">GitHub</a>
 
 -   The Main Branch
 
@@ -125,7 +125,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   A list of common terminal commands
 
-[Github](#github-anchor)
+<a name="github">GitHub</a>
 
 The Main Branch
 
