@@ -50,7 +50,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
  |
 
-[Angular/VS Code](https://docs.google.com/document/d/1-tO3_0tYb5kTzgTHj-ZXLNdYdJXD9q1SHvVX2zJupdM/edit#bookmark=id.wlutxe36xvfl)
+<a href="#angular">Angular/VS Code</a>
 
 -   How to Open a Project
 
@@ -97,7 +97,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
  |
 |
 
-[Git/GitKraken](https://docs.google.com/document/d/1-tO3_0tYb5kTzgTHj-ZXLNdYdJXD9q1SHvVX2zJupdM/edit#bookmark=id.pywuj576v6c1)
+<a href="#GitKraken">Git/GitKraken</a>
 
 -   About Git and GitKraken
 
@@ -117,7 +117,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
  |
 
-[FAQ's/Miscellaneous](https://docs.google.com/document/d/1-tO3_0tYb5kTzgTHj-ZXLNdYdJXD9q1SHvVX2zJupdM/edit#bookmark=kix.3n9vwdmzh1vk)
+<a href="#FAQ">FAQ's/Miscellaneous</a>
 
 -   FAQ's
 
@@ -125,7 +125,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   A list of common terminal commands
 
-<a name="github">GitHub</a>
+### <a name="github">GitHub</a>
 
 The Main Branch
 
@@ -245,7 +245,7 @@ Continuous Integration
 
 On GitHub, when you do have a red X (especially the main branch), you should focus your attention on fixing that as soon as you can. Your code should be production ready, and when there is broken code, it has to be addressed. Continuous integration is making constant commits, pull requests, pushes, etc. To make sure that when you do merge branches, there isn't an alarming amount of merge conflicts. You're basically ensuring that the small pieces do not break the functionality of the entire project.
 
-Git/GitKraken
+### <a name="GitKraken">Git/GitKraken</a>
 
 About Git and GitKraken
 
@@ -355,7 +355,7 @@ At this point, you can choose which lines or chunks of code you want to keep. It
 
 When you are finished with a file, click the green "save" button in the top right corner and continue with the other files. When you finish resolving all the merge conflicts, you want to click the green commit and merge button on the bottom right which will save all your merge conflicts and merge the two branches.
 
-Angular/VS Code
+### <a name="angular">Angular/VSCode</a>
 
 How to Open a Project
 
@@ -631,7 +631,7 @@ To use it, you first need to download the extension along with the Live Share Wh
 
 ![](https://lh5.googleusercontent.com/h2GXVl4-i5Rp1bq0PKGQlycv3mRZtbJoFqcafMyF0beZ6cKd6WI7LUbnpe53zMC5-rMQam8QjcoPbdnk0X6S8-TNN_hGU0OHw9golB34jfV9DucsK4_BdLbF6UT2wPB1lFHAGQSl)
 
-FAQ's/Miscellaneous
+### <a name="FAQ">FAQ's/Miscellaneous</a>
 
 -   How is this class similar to Data Structures?
 
