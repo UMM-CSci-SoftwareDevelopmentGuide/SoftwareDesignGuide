@@ -94,7 +94,6 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   VS Live Share
 
- |
 |
 
 <a href="#GitKraken">Git/GitKraken</a>
@@ -127,13 +126,13 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 ### <a name="github">GitHub</a>
 
-The Main Branch
+#### The Main Branch
 
 Every project has a main branch, this is what you should be submitting for labs and deploying for iterations. You should not be committing incomplete code to the main branch, whether it is a feature in a project or a lab. It is better to have solid code and comprehensive testing (even if it's not that much) rather than submitting partial code that is subpar and untested. On GitHub, you can view all previous changes on the main branch, as well as all other branches. You will most likely be using GitKraken, a tool used to make the process of commits, pushes, and merges more easily readable. After you push changes on GitKraken, you will be able to see the changes update on GitHub. When making a commit you should have all of the tests passing which will be annotated by a green check mark.
 
 ![](https://lh6.googleusercontent.com/Uh5WwgtoEBT9ALbP1aY82xG0M0uXF39KFqBz8HSxOWhN8tC90R5-IVN24HKp31bVue60a9nq0tQbBrjnjluXIVIm4U3J9VlfvpinGZrtjHfVUV2Tu5W0R8UEjOgry_eu_GhuVtR5)
 
-Viewing Changes
+#### Viewing Changes
 
 Like the main branch, you can choose to view the changes that are on a different branch by toggling the branch button. 
 
@@ -143,7 +142,7 @@ The files on GitHub reflect the same files that are being committed to the branc
 
 ![](https://lh5.googleusercontent.com/0SVXZAAfAvnyQh5A5EkLl8dQlM8csJkuSFvqAwUuYpm6FjceakNU7vgy3w-nNdUR09feXEENTOfLZPToICQrldfT0_Y7_wqrlCLJbUXMfOea7Ca0HslpMc5egGFry2veF8akH9bb)
 
-Git Blame
+#### Git Blame
 
 In relation to the last point, Git Blame can be another useful tool at your disposal. This allows you to see who has made commits in relation to changes in the code. It is particularly useful if another group has found a solution to a problem or found a more efficient/accurate way of implementing a feature or idea. 
 
@@ -155,7 +154,7 @@ The easiest way to view the git blame record is through GitKraken. After selecti
 
 ![](https://lh3.googleusercontent.com/SvgYjIxJFN4nmjPsGQvRekQDJj99FVA5PubWZMfOtnFxSW2l0as5RswGBmRT6esZgalAjqA3astfUtXP7l_x7YqT92IFvZrm1vyGxpty49awA1BcupWhP7ILCfrWwIIZFHkplryT)
 
-The Green Check and the Red X
+#### The Green Check and the Red X
 
 On GitHub, you can see a green check or a red X on whatever branch you have selected in the upper right corner of the files. If there is a red "X" that means at least one test in your code does not pass. This could be an E2E test, a spec test, or a server test. Occasionally, GitHub can experience issues and say you have a failing test when you know you don't have any! If this happens, simply re-run the tests through GitHub by clicking the red X and selecting to re-run the workload.
 
@@ -171,8 +170,9 @@ Another possibility is a yellow circle, which would appear instead of the
 
 green check and red X. Don't panic! This just means GitHub is in the middle of checking to see if your tests pass or not. Within about five minutes it will turn to either a red x or a green checkmark.
 
-About Pull Requests
+#### About Pull Requests
 
+Here's a good overview of pull requests:
 <https://www.youtube.com/watch?v=e3bjQX9jIBk>
 
 When creating a project, especially once your experience with a customer begins, you will be encouraged to personalize some settings on Github that will be discussed by your team. Pull requests are a useful method of making sure nothing unacceptable is being implemented. In your team settings you can set up a parameter for requiring a certain number of approvals in order to merge in a branch. Here is a link to a video with a quick explanation of pull requests: <https://www.youtube.com/watch?v=e3bjQX9jIBk>.
@@ -185,7 +185,7 @@ In the above picture, it is highlighted where you can access pull requests in Gi
 
 In our experience, we have upheld strong communication and if not one but two, or three, other group members were fully up to date before ever reading the pull request. While it is not required, it is strongly recommended to leave a comment on why a pull request was rejected. Communication is key, and with a small group it is certainly achievable.
 
-Setting Up Reviews for Pull Requests
+#### Setting Up Reviews for Pull Requests
 
 ![](https://lh3.googleusercontent.com/3u7YlN-dlk2CTZWkdKGPAdZFPltNgxvkIkQCQJUjGISlbslxggAk19r-qI5up7mhJL4uZVodoKpViR05h7spzZJb-RB6JJPfNsWBFuqc0834iLDPHy0m3-8s_lnQYUoxUvEjEt-L)
 
@@ -195,7 +195,7 @@ To set up pull requests for your groups first navigate to the desired repository
 
 Now that you have reached the branch protection rule page you will want to name the branch pattern and select the "Require pull request reviews before merging" checkbox. Typically we have set the required approvals to one or two people because there will be times when the whole group is not able to meet at the same time. There are a handful of other options that could prove useful but setting up reviews for merge requests is what we found to be the most useful.
 
-Creating a Pull Request
+#### Creating a Pull Request
 
    To create a pull request, navigate to the pull requests section in the top bar on your GitHub repository and click the green "New pull request" button located on the right side of the page.
 
@@ -211,7 +211,7 @@ On the lower sections of the page you will be able to view commits that have bee
 
 ![](https://lh6.googleusercontent.com/KFIV6_JoBojNMHlInFzc4u1ieFgpApiPsZXPbeJ_VhqX1it9_O0oKMt_X3M1iAbWZNsVtW5ZKooEtr_3K0TVjBOEbXeNNOiXLcOZW5MtQj47f6iNmBoJARBDmc9JMnyCShhmcZ5w)
 
-Testing
+#### Testing
 
 We've previously mentioned tests and testing, but here we'll go more in depth about what it is and how it works. When you write a block of code, you want to make sure it functions how you want it to. Writing a test for that code is a way to check that. We go into this with more in detail in the Angular section, this is just a brief overview.
 
@@ -219,7 +219,7 @@ There are different types of testing such as end to end (E2E), JUnit tests in Ja
 
 ![](https://lh5.googleusercontent.com/C5tYkkLrwwzCaJoNuO6ylTzsP8qNKhhwgYlV1YtBCkjD9O_6aMqqmWME4vpQ8oIAAzyKLmeraNnKrE30otiMdlq3ztJ8yft05gkiqfFVajz1dk4h8DC6h21KElp2-5drZDn5q7Ex)
 
-Agile Development/ZenHub
+#### Agile Development/ZenHub
 
 Zenhub is a project management tool used to organize your project into epics, stories, and milestones. A milestone is essentially a major goal for the project that will include a start and end date. After a milestone will come epics. These are the pieces that will make up the meat of your project; most often these are features in your projects or significant pieces of labs. You could consider these as an umbrella of ideas, most often features that include smaller pieces regarding the functionality of the idea that include numerous smaller parts. Finally is the step of creating stories/issues, these are the smaller pieces mentioned earlier that make up an epic. Issues are what you assign to people in your group. While testing is not worthy of its own issue it is extremely important which will be mentioned later. This style of development will help you organize your project within your team and serve as an advanced checklist. The UI provides a visual representation of your work. This is done by first setting up the project and after some progress, tools like the burndown chart (shown below) can be useful to evaluate your progress towards completing your milestone. 
 
@@ -241,13 +241,13 @@ When you close an issue this will update the burndown chart and other tracking t
 
 This aspect of the class is more important than it may seem, being able to actively organize with your group and visualize your goal and progress is a key to success even beyond this class. This may feel trivial at times, but rest assured it is a good practice which encourages organization, consistency, and healthy communication.
 
-Continuous Integration
+#### Continuous Integration
 
 On GitHub, when you do have a red X (especially the main branch), you should focus your attention on fixing that as soon as you can. Your code should be production ready, and when there is broken code, it has to be addressed. Continuous integration is making constant commits, pull requests, pushes, etc. To make sure that when you do merge branches, there isn't an alarming amount of merge conflicts. You're basically ensuring that the small pieces do not break the functionality of the entire project.
 
 ### <a name="GitKraken">Git/GitKraken</a>
 
-About Git and GitKraken
+#### About Git and GitKraken
 
 According to Wikipedia, Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. 
 
@@ -269,11 +269,11 @@ For each project and lab, you will get a repository in GitHub. On the project's 
 
 If you need to open the project or another project, go to "File" and click "Open repo", then select the folder that has the project you're looking for. You can do this in BOTH GitKraken and VS Code.
 
-Creating a new project (Method B)
+#### Creating a new project (Method B)
 
 Make sure you and your group have your repository in GitHub set up. And also have a directory for your project to go to. Now go straight to GitKraken. Choose "File" then "Clone Repo." Select "GitHub.com" and choose your group's repository and the directory where you would like to save the repository to on your machine.
 
-How to make a new branch
+#### How to make a new branch
 
 When you make a new branch, what you are doing is making a copy of the branch you're branching off from. You could think about it as parent and child branches. For example, if I want to make a new feature off the parent branch, the new branch (child branch) will be an exact copy of the parent branch. You can make new changes to the child branch and save changes without altering the original parent branch. When you are finished with changes on the child branch, you can then merge the child branch, back into the parent branch or another branch of your choosing. Now the selected branch will contain the approved changes of the child branch along with what it originally had.
 
@@ -293,7 +293,7 @@ After you enter the name of the new branch, you should see a new branch in the G
 
 When naming the branch use standard good naming practices to avoid confusion. An example of a bad name would be: "My_branch#$7" and a good example would be something more descriptive such as "doorBoard-list".
 
-Committing a Change
+#### Committing a Change
 
 When you alter code and want to save the changes, you will have to commit your changes. Make sure that you are committing to the right branch, which you can see on the left hand side. The easiest (and most visual) way to do this, is to use GitKraken
 
@@ -309,7 +309,7 @@ The commit message you attach to your change should be brief, but descriptive. T
 
 It is a good practice to commit often (especially if you make a lot of changes) to help avoid major bugs. When you make a commit, these changes are only saved locally; only you can see the change, until you push to GitHub, which leads into the next section.
 
-Pushing
+#### Pushing
 
 When pushing, you are sending the recent commits to the working repository (which you can see in GitHub). This will allow other members of the repository to view changes in the branch and pull the code to their local environment. 
 
@@ -321,7 +321,7 @@ You must pull all new changes from a branch before pushing your own changes. To 
 
 ![](https://lh3.googleusercontent.com/qDiYO7Vj0XkA6rG2wzQOLvK13zG-C2S8NJ6ZOQp3780S_mVCdqDScdY8ZbfAJeULVGchk346Wo5KD0ZpE9IIVp5sEblCnU82DTld6cH-6MB5AVzdZaXa9hunmQ2O3Ho_tgbWa0CZ)
 
-Pulling
+#### Pulling
 
 After pushing the changes other members of the repository will be able to pull the code to their local environment. When you pull changes for a branch, you are grabbing the changes to the branch and pulling it to your local project.
 
@@ -329,7 +329,7 @@ After pushing the changes other members of the repository will be able to pull t
 
 To summarize, pushing changes makes your changes to a branch available for members of the repository to see (usually your group and professors). Pulling brings those available changes to your local project.
 
-How to Merge Branches
+#### How to Merge Branches
 
 Any changes you make to a branch will need to be merged into either the main branch or a working branch for the changes to be utilized. For deployment all of the approved changes will eventually need to be merged into the main branch itself. 
 
@@ -341,7 +341,7 @@ In order to merge branches the easiest way to approach the problem is through Gi
 
 Now the changes you made on branch B will transfer over to branch A (assuming there are no merge conflicts which is the next topic). 
 
-Merge Conflicts
+#### Merge Conflicts
 
 When merging 2 branches, you will often run into a merge conflict due to overlapping code, a line of code in one file may have different things on another branch. When you merge, you will often get a yellow prompt notifying there is a merge conflict.
 
@@ -357,7 +357,7 @@ When you are finished with a file, click the green "save" button in the top righ
 
 ### <a name="angular">Angular/VSCode</a>
 
-How to Open a Project
+#### How to Open a Project
 
 When you open VS Code, it automatically opens the most recent project you were working on, which is convenient most of the time. Other times you will want to open a different project or start a new one. In VS Code, you will want to go to "File" and click on "Open Folder." Then you can choose the project that you want open in VS Code. 
 
@@ -365,7 +365,7 @@ When you open VS Code, it automatically opens the most recent project you were w
 
 After you've worked on more projects, going to "Open Recent" will let you choose a previous project that you've worked on instead of manually clicking through "Open Folder."
 
-How Angular Works
+#### How Angular Works
 
 Angular is a command line interface used to work with Angular applications and develop web applications.
 
@@ -377,13 +377,13 @@ To begin, when you first start working on your web application, anything that fi
 
 If you want to add a feature to your application like a button or a search bar, you will add a component. Components, like the app.module, add information to your web application. 
 
-The Client-Server-Database Model
+#### The Client-Server-Database Model
 
 This is a topic that is emphasized in lecture and we would recommend asking the professor(s) more about it if you have questions. 
 
 A good explanation can be made using a bank analogy. Let's say someone walks up to a bank teller and wants to take out money. The customer gives the teller their information and the teller retrieves the money from the vault. In this scenario, the customer is like the client, the teller is like the server and the bank vault is like the database. When the client is accessing a webpage, it gives the server information about what it wants to access. The server then goes to the database to request that it returns the desired information/data. The server uses the information provided to filter the database search and returns the desired information to the client.
 
--   To recap: 
+To recap: 
 
 -   Client - User clicking around on a webpage
 
@@ -393,7 +393,7 @@ A good explanation can be made using a bank analogy. Let's say someone walks up 
 
 ![](https://lh4.googleusercontent.com/Q2id9wUfX4hQVJzntIMYwO4FBCoYdmJBIFS5RLRxEZ1dW6CZdrj_SmDqXfj6VPhhhLQBg7qpvjzjg-uWrwo1Nc1GfNQ4lUhTtMGhF-zYYnVDnQqmYrmX-qnWg4-V9nNFEYWObeoo)
 
-App.module
+#### App.module
 
 App.module is like the foundation of a web application, think of it as the brain of the project. What you are able to do in Angular is create components. A component is like a feature on a web page, an example would be the search bar on YouTube. Components are extra things that can be added to a web page to make it more useful. When we go over the app.module.ts file, you will see that each component you make must be imported and declared.
 
@@ -401,51 +401,51 @@ App.module is like the foundation of a web application, think of it as the brain
 
 App.module consists of 6 files:
 
--   App-routing.module.ts
+*   App-routing.module.ts
 
--   If you are adding a component that requires the user to access another page other than the main application page (which you will eventually have to do) you need to define that path here. The home page itself has a url, so a new page will need a new url/path, which you define here (It's more useful if you create the component first in the component.ts file to avoid naming errors).
+   *If you are adding a component that requires the user to access another page other than the main application page (which you will eventually have to do) you need to define that path here. The home page itself has a url, so a new page will need a new url/path, which you define here (It's more useful if you create the component first in the component.ts file to avoid naming errors).
 
 ![](https://lh3.googleusercontent.com/DsYDIHYWZQ6Wlh2dEhaL2IbHuc71U2HTLpyQ_iqUd0QNnOYz1teHQr6MkyRxBxUc_AfIhP1_K5YT3W8KeLz7ozX7YXnFHOjn7Zayfesly7Gu8X0bX6M2_UYC7cD0LdeEMUW-PTek)
 
--   App.component.html
+*   App.component.html
 
--   This is the file that controls what text and images, go on the specified page of your web application. It also has a variety of other features that you can explore such as adding a toggle button.
+   *This is the file that controls what text and images, go on the specified page of your web application. It also has a variety of other features that you can explore such as adding a toggle button.
 
--   HTML is a markup language used to create web pages for display in web browsers. It is the code for creating web pages, using tags and other commands that a browser reads and converts into the readable web pages that people see.
+   *HTML is a markup language used to create web pages for display in web browsers. It is the code for creating web pages, using tags and other commands that a browser reads and converts into the readable web pages that people see.
 
 ![](https://lh6.googleusercontent.com/PZFHyhnh1BbnZe9uFm564rd8ST9h0QYttqbqBW2hxJ3A-lfZPAM5lC24K98Ksk2wNHDISbI5NJeciQZ7Fnpn-23Ka3E8xYQrKVClLLd5TjJPoDENL97lsdnJkNRwrmIVU92-y7Im)
 
--   App.component.scss
+*   App.component.scss
 
--   This file controls the CSS for the html which allows visual customization for certain aspects of the web page, such as changing the color of buttons.
+   *This file controls the CSS for the html which allows visual customization for certain aspects of the web page, such as changing the color of buttons.
 
--   App.component.spec.ts
+*   App.component.spec.ts
 
--   This file tests the methods in the app.component.ts file.
+   *This file tests the methods in the app.component.ts file.
 
--   The file utilizes the methods like toBeTrue(), toBeFalse(), toBeTruthy() and toBeFalsy(). They are what they seem, they are methods used to check if the provided input is true or false.
+   *The file utilizes the methods like toBeTrue(), toBeFalse(), toBeTruthy() and toBeFalsy(). They are what they seem, they are methods used to check if the provided input is true or false.
 
 ![](https://lh4.googleusercontent.com/L0-0NbUeWpvLnKPChUg_vmswl0SzFGUL5maI9_yBcVHiyVazOmrz6vngvQhrIC-zx9Q8ovOB1tDHJTKTiZCTmyOEQzrr-3PKEG0Hb1kzAqfUlDLWiv_Hx9Cs7NP_-ON9BU4iDgWt)
 
--   App.component.ts
+*   App.component.ts
 
--   This file (along with all other component.ts files) are very important. Here, you can create methods that move data/information, which essentially controls the functionality of the component. Each file on the client side is written in TypeScript which is a language with its own syntax. The files for the server are written in Java which you should have some familiarity with and will be noted by ".java" in the file name.
+   *This file (along with all other component.ts files) are very important. Here, you can create methods that move data/information, which essentially controls the functionality of the component. Each file on the client side is written in TypeScript which is a language with its own syntax. The files for the server are written in Java which you should have some familiarity with and will be noted by ".java" in the file name.
 
 ![](https://lh4.googleusercontent.com/ZTZLKobk9hLMomijKM7ZtzREaB9V4Fx_Ixs9r3C-RAulxIt50EM77n4-XQdSw7Bxuj9g3teQQNLGt66Z_zDbr1f28INDUcbswOHHb4ZHwgY8vt5JF2WqbIgQCT-mAbUetK8OX8-w)
 
--   App.module.ts
+*   App.module.ts
 
--   In this file, you must import and declare each component or it will not work. It is small, but it is necessary for the files to communicate and function.
+   *In this file, you must import and declare each component or it will not work. It is small, but it is necessary for the files to communicate and function.
 
 ![](https://lh3.googleusercontent.com/0bdyKvPu6je6AINewfMfvPv5AnJIhrHno2AYwIdguqNRUN9Qwi5rBA1xt5EiGMZ8sHLdQpWXhpWj9EPgq7wl2hF2Oe40F6XhUtZR0v3iv9vHU9KDXOGGVAQa7mmyhvYNoi8kOyKU)
 
 ![](https://lh6.googleusercontent.com/YUKCD4zLnaJQkGGFLLXBhvHdFJAONkluure--kKs0h5UWba_ZXVwvdPR74b0MR8TasAftLKBBxDTr7SS5eqXgKZC336nfs6qhB0ziYfr9-Ir-NEyiSX9eqm5uyZv1ElMNPHX2DE9)
 
-Running the Server and Running the Client
+#### Running the Server and Running the Client
 
 You are going to want to see what your application looks like while you work on it so you can view any changes being made.
 
--   To run the server: 
+To run the server: 
 
 -   cd server (If the server is already running this command will not work and say the local host is already running, this also applies if you have the server running in another terminal window).
 
@@ -463,27 +463,27 @@ Then go to localhost:4200 (your application may experience bugs when using diffe
 
 IMPORTANT:  When you want to close VS Code and you have run the client and server, you must hit Control+C in the terminal for both the client and server. This shuts down the client and server so it doesn't lock you out the next time you try to access it. There are fixes for this issue if you do forget to use Control+C, but hopefully you can avoid that.
 
-All about Components
+#### All about Components
 
--   Component.html
+*   Component.html
 
-Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
+   *Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
 
 If a user is providing an email, you can make something like "User's email: (insert here)." Different users will have different emails, but the first part will remain the same. This isn't restricted to just email, any information that the users provide can be displayed if you write the right methods.
 
 ![](https://lh3.googleusercontent.com/V3ip2MI5w1C_FCJ0FpuY8tNZeWJ2o5R_i8B72TgwQOa3pd8PgRvbLZnZut97MRb5ykxitCgYWCM_EAZklM9-7JWpBW-i-9diZDH8ssCXZccfI31bnkH7FSOCWkpR8U0rhkjzm9pz)
 
--   This file is also where you can add buttons on a webpage. What happens with these buttons are defined in the component.ts file. These buttons (when clicked) can bring the user to another page, so you're able to add a link to this file as a button.
+   *This file is also where you can add buttons on a webpage. What happens with these buttons are defined in the component.ts file. These buttons (when clicked) can bring the user to another page, so you're able to add a link to this file as a button.
 
 ![](https://lh3.googleusercontent.com/QqN5rTbHMmZj_59Muev4VotOSuJeKC7nsQVx-37VNEkw8Q9RZdJJKmq98rJXumXnJndl9xoL6yu1XZQcFd2JXzm5IWEj902tfGB2sAefB5RlNFapKCu-RIujrNWKuOEC5ZjPdFLN)
 
--   Component.ts
+*   Component.ts
 
--   This is the TypeScript file for a component and where the methods for a component are written. As mentioned before, this is where you also define variables which are crucial, because a lot of bugs will most likely result from a variable not being defined or being utilized incorrectly.
+   *This is the TypeScript file for a component and where the methods for a component are written. As mentioned before, this is where you also define variables which are crucial, because a lot of bugs will most likely result from a variable not being defined or being utilized incorrectly.
 
--   This TypeScript file is similar to a class, where it's methods are defined, and you can utilize them in other places with the defined variables. This is also where variables are initialized in the ngOnInit method. Those variables could be undefined with ngOnDestroy.
+   *This TypeScript file is similar to a class, where it's methods are defined, and you can utilize them in other places with the defined variables. This is also where variables are initialized in the ngOnInit method. Those variables could be undefined with ngOnDestroy.
 
--   Here's what you usually find in this file:
+   Here's what you usually find in this file:
 
 -   Importing the necessary routes, services, etc.
 
@@ -505,91 +505,91 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 ![](https://lh3.googleusercontent.com/oqFFLPrq1jACKVp0i8JfSxUw4oTylCNlSQ04dxPo1eDKkXBuL1_WXi0exPHcXPWDhQzhVfy6H_SVxK6k76DhimXfuSNwJzeD1Xra0ob2F3INSSaXu7Oc-2wx0Sw-olg30kZQjwTY)
 
--   Component.spec.ts
+*   Component.spec.ts
 
--   This file is used to test the methods that are written in the component.ts file. It checks to make sure that the methods are behaving how you want them to. Because the tests are local (within VS Code) they can't actually reflect your web application. So we utilize mock testing to test our methods with "fake" data that we create. 
+   *This file is used to test the methods that are written in the component.ts file. It checks to make sure that the methods are behaving how you want them to. Because the tests are local (within VS Code) they can't actually reflect your web application. So we utilize mock testing to test our methods with "fake" data that we create. 
 
--   Mock Testing
+*   Mock Testing
 
--   Testing a component is an important part of this class and the functionality of the project (it also helps with debugging). Mock testing data is in the (nameHere).service.mock.ts file. In the component.spec.ts file, after all the imports, there is a describe method that defines the imports.
+   *Testing a component is an important part of this class and the functionality of the project (it also helps with debugging). Mock testing data is in the (nameHere).service.mock.ts file. In the component.spec.ts file, after all the imports, there is a describe method that defines the imports.
 
--   There is also a beforeEach method that does something before testing a method. If a beforeEach method has "async" then whatever is defined in the beforeEach will happen asynchronously from the other tests.
+   *There is also a beforeEach method that does something before testing a method. If a beforeEach method has "async" then whatever is defined in the beforeEach will happen asynchronously from the other tests.
 
--   The tests start with an "it" statement telling what the method should do or what it should output. Commonly seen are toBeTruthy() and toBeFalsy() which say if something should be true or false. equals() is also another common statement in a test. 
+   *The tests start with an "it" statement telling what the method should do or what it should output. Commonly seen are toBeTruthy() and toBeFalsy() which say if something should be true or false. equals() is also another common statement in a test. 
 
--   As mentioned before, each test looks at the file (name).service.mock.ts. This is where all the "fake" data is defined and what the tests refer to. This file is like a "fake" database of information that you are testing.
+   *As mentioned before, each test looks at the file (name).service.mock.ts. This is where all the "fake" data is defined and what the tests refer to. This file is like a "fake" database of information that you are testing.
 
 ![](https://lh3.googleusercontent.com/j-DP0j7KPMDI05aoDDdruDtpCWol_iww5fqUcRVK7eYPTiJxhJ64HxDKGu-ENPGbq1cPN69ZuQNQEZwVHeNLzLhVjm_v2QtEWGW7j9GMLNJ6rsJMA-x3q5EnT5ut7tHtU7PtRo61)
 
 ![](https://lh4.googleusercontent.com/65RTJfv-1_H0efJENh5xOxAsrVqpRBKMSde1bcKMnJyveoXSZaU6NQHd7Iof3i6lAHDdKvWG_IwX6Ovjvf1XfyH4C1yz_1uiRx9TJ--g3_mzFGcJBZm8EZ_uDOmf83j5JQWiqtYg)
 
--   Component.scss
+*   Component.scss
 
--   This is the CSS file for a component. It styles the text along with the pieces of the component itself. You can add color, borders, background images, dropdown menus, etc. This website has a lot of CSS stuff that you can quickly apply: <https://www.w3schools.com/css/css_border.asp>. 
+   *This is the CSS file for a component. It styles the text along with the pieces of the component itself. You can add color, borders, background images, dropdown menus, etc. This website has a lot of CSS stuff that you can quickly apply: <https://www.w3schools.com/css/css_border.asp>. 
 
--   CSS is an overlooked facet of a web application. (This will allow you to give your application a professional setting and look for the user). If something looks clean and professional, it's bound to do well, and it gives a sense of confidence. Avoid going over the top with it and ending up with a cluttered UI, but there are enough options to make your web application stand out.
+   *CSS is an overlooked facet of a web application. (This will allow you to give your application a professional setting and look for the user). If something looks clean and professional, it's bound to do well, and it gives a sense of confidence. Avoid going over the top with it and ending up with a cluttered UI, but there are enough options to make your web application stand out.
 
--   Creating an Object
+*   Creating an Object
 
--   A TypeScript file (not attached to a single component) can be used to define an object. So if you want to create an object that resembled an email, you would declare that the object "email" has a date, body/message, subject line, sent from, and sent to fields. The name for this file would then be "email.ts" So any component that utilizes this object (by importing it) can access any of the fields. 
+   *A TypeScript file (not attached to a single component) can be used to define an object. So if you want to create an object that resembled an email, you would declare that the object "email" has a date, body/message, subject line, sent from, and sent to fields. The name for this file would then be "email.ts" So any component that utilizes this object (by importing it) can access any of the fields. 
 
--   Each field has a type. Some common ones are string, boolean, etc. You also have the ability to make user defined types.
+   *Each field has a type. Some common ones are string, boolean, etc. You also have the ability to make user defined types.
 
--   Try to think of this file as multiple people agreeing to speak in the same language. 
+   *Try to think of this file as multiple people agreeing to speak in the same language. 
 
 ![](https://lh6.googleusercontent.com/uDx6I4Ectt5WT_UpD9p1MVyA5Sj879FY2ZNxkXzJxIcyN41UCntwmRO2UQvjyXxAE_2h47qgVI64pLT30aWYoMvXt3MDzq-9je5qg7ciIakDFIVeRAgFA-XgehSYT3NaryBsBCRZ)
 
--   Services
+*   Services
 
--   Services will be an important part of your web application. A service file has a bunch of methods that can be utilized by any component. Unlike a service file, TypeScript files for a component are specifically for that component. 
+   *Services will be an important part of your web application. A service file has a bunch of methods that can be utilized by any component. Unlike a service file, TypeScript files for a component are specifically for that component. 
 
--   Components that use services, have to share the same information. For example, if two different component files utilize a service, and that service has the variable "note", then "note" is defined the same in both files. To declare that a component is using a service, you need to import it. 
+   *Components that use services, have to share the same information. For example, if two different component files utilize a service, and that service has the variable "note", then "note" is defined the same in both files. To declare that a component is using a service, you need to import it. 
 
 ![](https://lh3.googleusercontent.com/lKrRKI_mwL9hhCs0WIUnOWe_pb6GiNnIVPj35n3EabbbdhkZo5OTTN2wPIA9zvCUq_dyYPPen15DPmuFSPX2avXBmCV0X5ogVu8McH3baMlCOYWZZA4lZI77w5tgZ5_N1DJTe63s)
 
--   Spec files for components also need to import services so it can be tested for a component.
+   *Spec files for components also need to import services so it can be tested for a component.
 
--   Services also have spec files to test the methods. NOTE: Inside of these spec files, you create the data that you want the service to test.
+   *Services also have spec files to test the methods. NOTE: Inside of these spec files, you create the data that you want the service to test.
 
 ![](https://lh3.googleusercontent.com/mgdqrIzyvgfZ7_EgocHmAO0rJA700RTbGIeSH5WbIiqm9ZGhJbsfCDNjgTLPNyvqzRILThGEVS9egy8dJpQek8OrauNiUUZ8hWTTqBoYuaQfj8bcAQuGiODmnuE5PxuQCb-BadRx)
 
-Server Side Files
+#### Server Side Files
 
--   Controller
+*   Controller
 
--   Remember that the server is a way for a user to access specific information from a database. So this controller file has methods that access and change information in a database.
+   *Remember that the server is a way for a user to access specific information from a database. So this controller file has methods that access and change information in a database.
 
--   The controller also has a .java file which is similar to an object file like "email.ts" on the client side. It's where an object/variable is defined and it can be utilized in the methods. 
+   *The controller also has a .java file which is similar to an object file like "email.ts" on the client side. It's where an object/variable is defined and it can be utilized in the methods. 
 
 ![](https://lh5.googleusercontent.com/jcoGLiUu06fZ_lsjPeBepysUj7_KlQQKlsw-BL4WBPPqUzngEOoWXav1jdfhPeO7FK96MI0B-ZqCmh-fJde5MDXKWMGcqhyBCETcYTJlxn27-z2ySqzZIDOIfLAOfAPi-SAAWmV5)
 
--   After the .java file comes the Controller file, which is written in Java. As mentioned earlier, this file has methods that work within the parameters you set in the .java file. It "talks" to the database and can retrieve or change information in the database.
+   *After the .java file comes the Controller file, which is written in Java. As mentioned earlier, this file has methods that work within the parameters you set in the .java file. It "talks" to the database and can retrieve or change information in the database.
 
--   If you have taken Data Structures, you will notice the syntax is a little more complicated, but is still familiar enough that it's understandable.
+   *If you have taken Data Structures, you will notice the syntax is a little more complicated, but is still familiar enough that it's understandable.
 
 ![](https://lh4.googleusercontent.com/Nmk5XKogqwpiseUId43y7YN6sbVsJqAVlI2X5JdPnvGyzXrrp82YNaZ-aPrliEnYIVyjkrNoowZpSAa_OCUEOfyMU17LlJQ8-W3L411YerZVAifZ3gqyAm_cZVuPqxmI4Nwgz1oM)
 
--   Controller specs
+*   Controller specs
 
--   The Controller also needs to be tested so you know the server is doing what you want it to. You will configure these tests by writing JUnit tests. 
+   *The Controller also needs to be tested so you know the server is doing what you want it to. You will configure these tests by writing JUnit tests. 
 
--   Like in the client, this test file also has @BeforeEach to declare what is instantiated before each test.
+   *Like in the client, this test file also has @BeforeEach to declare what is instantiated before each test.
 
--   The data that you test is also something you define at the beginning of this file. You're essentially creating a mock database.When you add an object to a database, it must have the same fields as it does in the .java file. So our email object would require the fields body/message, subject, etc.
+   *The data that you test is also something you define at the beginning of this file. You're essentially creating a mock database.When you add an object to a database, it must have the same fields as it does in the .java file. So our email object would require the fields body/message, subject, etc.
 
 ![](https://lh4.googleusercontent.com/aYfTprPaNJGVW3hVYQGAtjLrApozzwt8hhZCnuJu2MgflnGGqz2cmBOZuO498JseRl_oUi3MU00apZKmEko1y39wWLx7Pfyezb9a2l0acCCsYuko5573SRPE3DqvftQFCYCVoAJo)
 
--   Each test should have an @Test to declare it's a test. It will also provide a "Run Test | Debug Test" option. Clicking Run Test will either give you a check mark or an X (failure). NOTE: Just because a test passes, does not always mean it does what you want.
+   *Each test should have an @Test to declare it's a test. It will also provide a "Run Test | Debug Test" option. Clicking Run Test will either give you a check mark or an X (failure). NOTE: Just because a test passes, does not always mean it does what you want.
 
--   At times a failing test can be the result of how the test itself is written but most likely it is an issue with the method. Being able to read why a test is failing, and possibly which line is causing the error, is a necessary skill in order to debug your code.
+   *At times a failing test can be the result of how the test itself is written but most likely it is an issue with the method. Being able to read why a test is failing, and possibly which line is causing the error, is a necessary skill in order to debug your code.
 
 ![](https://lh3.googleusercontent.com/ba8yngm7cujAG2R48rRVvsgyGbDiqrK2STphth_HzfS6e9DYs5Mv-jbrA6eqOhV6vsXTAqPvFHOatnv545qevUQUuz3fFtMe37jq1VqvAmJtHM3M3WnwaWeM9tviUxDLdgmmLUQJ)
 
--   JUnit testing can be tricky and the syntax can cause headaches at times, so this is a topic we would suggest you ask your professor(s) about if you need further clarification.
+   *JUnit testing can be tricky and the syntax can cause headaches at times, so this is a topic we would suggest you ask your professor(s) about if you need further clarification.
 
-Databases 
+#### Databases 
 
--   About Databases
+About Databases:
 
 -   Remember that a database works as a bank of information/data. You are able to add, remove, or alter these entries in the database.
 
@@ -607,7 +607,7 @@ Databases 
 
 -   To seed a database, you need to first cd into the database file. So open a new terminal and the command is cd database. Then ./mongoseed.bat seeds the database.
 
-E2E testing
+#### E2E testing
 
 E2E (End to End) testing tests the connection between the client and the server. It tests whether or not your client to server interaction works and does what you want it to do such as adding an entry to a field or deleting an object.
 
@@ -621,7 +621,7 @@ Like the components in the client, there is a .ts file and spec.ts file. You're 
 
 ![](https://lh5.googleusercontent.com/a3lGtWWQg3aV7NUDcWwae-nfG7x3DjyxMLe8tv4xYvZod7RBDgHUiWKKPJhtp0i3K_nWbhmEercmIlLbDrdxfBn4ddweDE5WJvMNzfhFJyIrPXgYEDORIRr79ulz0J87wjroJQY-)
 
-VS Live Share
+#### VS Live Share
 
 VS Live Share is an extension on VS Code that allows you to pair program with other people. It is similar to Google Drive where multiple people can work on the same code at the same time but in this case one person is hosting the session so they will be responsible for running the client, server, and tests as well as handling commits and pushes.
 
@@ -633,47 +633,47 @@ To use it, you first need to download the extension along with the Live Share Wh
 
 ### <a name="FAQ">FAQ's/Miscellaneous</a>
 
--   How is this class similar to Data Structures?
+*   How is this class similar to Data Structures?
 
--   Software Design builds off of concepts in Data Structures. You should have used Java/IntelliJ in Data Structures, and writing code for the server is also written in the same language. JUnit testing is also another thing you should have have at least been introduced to in Data Structures which you will practice more in this class
+   *Software Design builds off of concepts in Data Structures. You should have used Java/IntelliJ in Data Structures, and writing code for the server is also written in the same language. JUnit testing is also another thing you should have have at least been introduced to in Data Structures which you will practice more in this class
 
--   How much time do I need to dedicate to this class?
+*   How much time do I need to dedicate to this class?
 
--   Well, to put it bluntly, a lot. Every group put in dozens of sleepless nights into this class. It takes awhile to understand what each part does, and then putting it altogether in a short period of time is not easy for anyone. This will certainly be a class that will test your character, patience, and work ethic.
+   *Well, to put it bluntly, a lot. Every group put in dozens of sleepless nights into this class. It takes awhile to understand what each part does, and then putting it altogether in a short period of time is not easy for anyone. This will certainly be a class that will test your character, patience, and work ethic.
 
--   Yikes, everyone seems like they know what they're doing and I'm stuck. What should I do?
+*   Yikes, everyone seems like they know what they're doing and I'm stuck. What should I do?
 
--   The best thing you can do for yourself is to ask questions. Ask the professor, the TA, or other classmates. This is a learning experience. No book or text can help you more than actually playing with the code, thinking about how the moving parts work, and asking questions about what you don't know. There is not always a solid answer, but there could be insight into possible approaches. When you reach your second or third iteration, you will have become more of an expert about the code than the professor(s), because you have undoubtedly tangled with it more, and understand how it functions. We can assure you, your classmates are equally and or more confused as you are, so learn together and help each other. Remember everybody is stronger in some areas than others so while some classmates may seem ahead of the game there is almost certainly something unique you can bring to the team.
+   *The best thing you can do for yourself is to ask questions. Ask the professor, the TA, or other classmates. This is a learning experience. No book or text can help you more than actually playing with the code, thinking about how the moving parts work, and asking questions about what you don't know. There is not always a solid answer, but there could be insight into possible approaches. When you reach your second or third iteration, you will have become more of an expert about the code than the professor(s), because you have undoubtedly tangled with it more, and understand how it functions. We can assure you, your classmates are equally and or more confused as you are, so learn together and help each other. Remember everybody is stronger in some areas than others so while some classmates may seem ahead of the game there is almost certainly something unique you can bring to the team.
 
--   I accidentally forgot to do Ctrl+C in the terminal before I closed VS Code and now it says the session is locked
+*   I accidentally forgot to do Ctrl+C in the terminal before I closed VS Code and now it says the session is locked
 
--   We did this way too many times. Here is a potential fix that worked for us: <https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command>
+   *We did this way too many times. Here is a potential fix that worked for us: <https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command>
 
--   I can't find the error where my code is breaking
+*   I can't find the error where my code is breaking
 
--   This is the thing that will keep you up at night. Debugging is frustrating and annoying because the error could be as small as a missing a comma, a mis-named variable, or other minute overlooked pieces. 
+   *This is the thing that will keep you up at night. Debugging is frustrating and annoying because the error could be as small as a missing a comma, a mis-named variable, or other minute overlooked pieces. 
 
--   If the error responds with a line of code that is potentially the problem, it's worth going to that line and tracing backwards. This means going back through the chain of interactions that let you create that line of code. So if the line has a variable, go to that variable and see if it's defined. If the line uses a method, go to the method and see if it's written correctly. Hopefully, you can find and correct your error. If something appears to be incorrect with a method but you can not pin down what it is write a test! This will help you find the error as well as reinforce good habits for writing tested code.
+   *If the error responds with a line of code that is potentially the problem, it's worth going to that line and tracing backwards. This means going back through the chain of interactions that let you create that line of code. So if the line has a variable, go to that variable and see if it's defined. If the line uses a method, go to the method and see if it's written correctly. Hopefully, you can find and correct your error. If something appears to be incorrect with a method but you can not pin down what it is write a test! This will help you find the error as well as reinforce good habits for writing tested code.
 
--   If you don't think you made a mistake by tracing backwards, maybe stop and ask, does the approach I'm using make sense or am I missing something? Is there an error or mistake in logic? If you're unsure, ask your professor or a classmate about your approach and see what their opinion of it is. (It is a strangely relieving feeling to hear, "Oh, your approach is on the right track, you just forgot to include these things").
+   *If you don't think you made a mistake by tracing backwards, maybe stop and ask, does the approach I'm using make sense or am I missing something? Is there an error or mistake in logic? If you're unsure, ask your professor or a classmate about your approach and see what their opinion of it is. (It is a strangely relieving feeling to hear, "Oh, your approach is on the right track, you just forgot to include these things").
 
--   Oftentimes, it might just come down to having another pair of eyes looking at the code. This happens a lot more than you can imagine, so don't be frustrated because believe us when we say it happens to everyone.
+   *Oftentimes, it might just come down to having another pair of eyes looking at the code. This happens a lot more than you can imagine, so don't be frustrated because believe us when we say it happens to everyone.
 
--   How much CSS is enough?
+*   How much CSS is enough?
 
--   From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
+   *From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
 
--   I feel overwhelmed right now and I don't know what to do
+*   I feel overwhelmed right now and I don't know what to do
 
--   First and foremost, know that it is ok. It's a common feeling. A good first step is to start with the small things. Take the time to really understand one or two ideas/concepts and how they work. Ask questions about what you don't understand. Once you start to see how the details function you can put together the bigger picture.
+   *First and foremost, know that it is ok. It's a common feeling. A good first step is to start with the small things. Take the time to really understand one or two ideas/concepts and how they work. Ask questions about what you don't understand. Once you start to see how the details function you can put together the bigger picture.
 
--   We should also say, this is not a walk in the park kind of class. You will have to put time, and genuine effort into this class if you want to do ok, even more if you want to excel. Don't sit back and rely on your team, that is the worst thing you can do for your learning. Even if you just do a couple things, do them well, and seek to do more. Being proactive about accepting tasks and problems is a great way to learn the material and even if you do not succeed right away you can set up the framework in order for your team to assist you.
+   *We should also say, this is not a walk in the park kind of class. You will have to put time, and genuine effort into this class if you want to do ok, even more if you want to excel. Don't sit back and rely on your team, that is the worst thing you can do for your learning. Even if you just do a couple things, do them well, and seek to do more. Being proactive about accepting tasks and problems is a great way to learn the material and even if you do not succeed right away you can set up the framework in order for your team to assist you.
 
--   How Many Questions is Too Many Questions?
+*   How Many Questions is Too Many Questions?
 
--   If you are confused about a concept or a bug it is best to ask questions early and often. Don't be ashamed or scared, your question may benefit everyone. Banging your head against the wall until the situation is solved can be very time consuming and may not lead to the best solution. Asking questions early can save you time and allow you to move on to other tasks.
+   *If you are confused about a concept or a bug it is best to ask questions early and often. Don't be ashamed or scared, your question may benefit everyone. Banging your head against the wall until the situation is solved can be very time consuming and may not lead to the best solution. Asking questions early can save you time and allow you to move on to other tasks.
 
-Remote programming
+#### Remote programming
 
 Unfortunately, we took this class during the COVID-19 pandemic, and the entire class had to program remotely. Although it was tough at first, we managed to adapt and still put together a solid project. If you also find yourself in a position where you program remotely (which is a realistic expectation after college), the CSCI faculty have guides to download the software necessary to program like you do in the lab (of course each guide is specific to the laptop/computer you have).
 
@@ -723,7 +723,7 @@ A List of Common Terminal Commands (note that "→" stands for followed by, an e
 
 -   git push (allows you to choose and push your changes to a branch on GitHub, will require login information
 
-Conclusion
+#### Conclusion
 
 We do hope you found this guide helpful in some way, and that you continue to seek guidance if you have any questions.
 
