@@ -26,7 +26,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 |
 
-[GitHub](https://docs.google.com/document/d/1-tO3_0tYb5kTzgTHj-ZXLNdYdJXD9q1SHvVX2zJupdM/edit#bookmark=id.far38g3ut3df)
+[GitHub](#github-anchor)
 
 -   The Main Branch
 
@@ -125,9 +125,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   A list of common terminal commands
 
- |
-
-     GitHub
+Github(#github-anchor)
 
 The Main Branch
 
