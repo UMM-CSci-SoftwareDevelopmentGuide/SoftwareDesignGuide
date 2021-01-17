@@ -383,7 +383,7 @@ This is a topic that is emphasized in lecture and we would recommend asking the 
 
 A good explanation can be made using a bank analogy. Let's say someone walks up to a bank teller and wants to take out money. The customer gives the teller their information and the teller retrieves the money from the vault. In this scenario, the customer is like the client, the teller is like the server and the bank vault is like the database. When the client is accessing a webpage, it gives the server information about what it wants to access. The server then goes to the database to request that it returns the desired information/data. The server uses the information provided to filter the database search and returns the desired information to the client.
 
--   To recap: 
+To recap: 
 
 -   Client - User clicking around on a webpage
 
@@ -403,39 +403,39 @@ App.module consists of 6 files:
 
 *   App-routing.module.ts
 
--   If you are adding a component that requires the user to access another page other than the main application page (which you will eventually have to do) you need to define that path here. The home page itself has a url, so a new page will need a new url/path, which you define here (It's more useful if you create the component first in the component.ts file to avoid naming errors).
+   *If you are adding a component that requires the user to access another page other than the main application page (which you will eventually have to do) you need to define that path here. The home page itself has a url, so a new page will need a new url/path, which you define here (It's more useful if you create the component first in the component.ts file to avoid naming errors).
 
 ![](https://lh3.googleusercontent.com/DsYDIHYWZQ6Wlh2dEhaL2IbHuc71U2HTLpyQ_iqUd0QNnOYz1teHQr6MkyRxBxUc_AfIhP1_K5YT3W8KeLz7ozX7YXnFHOjn7Zayfesly7Gu8X0bX6M2_UYC7cD0LdeEMUW-PTek)
 
 *   App.component.html
 
--   This is the file that controls what text and images, go on the specified page of your web application. It also has a variety of other features that you can explore such as adding a toggle button.
+   *This is the file that controls what text and images, go on the specified page of your web application. It also has a variety of other features that you can explore such as adding a toggle button.
 
--   HTML is a markup language used to create web pages for display in web browsers. It is the code for creating web pages, using tags and other commands that a browser reads and converts into the readable web pages that people see.
+   *HTML is a markup language used to create web pages for display in web browsers. It is the code for creating web pages, using tags and other commands that a browser reads and converts into the readable web pages that people see.
 
 ![](https://lh6.googleusercontent.com/PZFHyhnh1BbnZe9uFm564rd8ST9h0QYttqbqBW2hxJ3A-lfZPAM5lC24K98Ksk2wNHDISbI5NJeciQZ7Fnpn-23Ka3E8xYQrKVClLLd5TjJPoDENL97lsdnJkNRwrmIVU92-y7Im)
 
 *   App.component.scss
 
--   This file controls the CSS for the html which allows visual customization for certain aspects of the web page, such as changing the color of buttons.
+   *This file controls the CSS for the html which allows visual customization for certain aspects of the web page, such as changing the color of buttons.
 
 *   App.component.spec.ts
 
--   This file tests the methods in the app.component.ts file.
+   *This file tests the methods in the app.component.ts file.
 
--   The file utilizes the methods like toBeTrue(), toBeFalse(), toBeTruthy() and toBeFalsy(). They are what they seem, they are methods used to check if the provided input is true or false.
+   *The file utilizes the methods like toBeTrue(), toBeFalse(), toBeTruthy() and toBeFalsy(). They are what they seem, they are methods used to check if the provided input is true or false.
 
 ![](https://lh4.googleusercontent.com/L0-0NbUeWpvLnKPChUg_vmswl0SzFGUL5maI9_yBcVHiyVazOmrz6vngvQhrIC-zx9Q8ovOB1tDHJTKTiZCTmyOEQzrr-3PKEG0Hb1kzAqfUlDLWiv_Hx9Cs7NP_-ON9BU4iDgWt)
 
 *   App.component.ts
 
--   This file (along with all other component.ts files) are very important. Here, you can create methods that move data/information, which essentially controls the functionality of the component. Each file on the client side is written in TypeScript which is a language with its own syntax. The files for the server are written in Java which you should have some familiarity with and will be noted by ".java" in the file name.
+   *This file (along with all other component.ts files) are very important. Here, you can create methods that move data/information, which essentially controls the functionality of the component. Each file on the client side is written in TypeScript which is a language with its own syntax. The files for the server are written in Java which you should have some familiarity with and will be noted by ".java" in the file name.
 
 ![](https://lh4.googleusercontent.com/ZTZLKobk9hLMomijKM7ZtzREaB9V4Fx_Ixs9r3C-RAulxIt50EM77n4-XQdSw7Bxuj9g3teQQNLGt66Z_zDbr1f28INDUcbswOHHb4ZHwgY8vt5JF2WqbIgQCT-mAbUetK8OX8-w)
 
 *   App.module.ts
 
--   In this file, you must import and declare each component or it will not work. It is small, but it is necessary for the files to communicate and function.
+   *In this file, you must import and declare each component or it will not work. It is small, but it is necessary for the files to communicate and function.
 
 ![](https://lh3.googleusercontent.com/0bdyKvPu6je6AINewfMfvPv5AnJIhrHno2AYwIdguqNRUN9Qwi5rBA1xt5EiGMZ8sHLdQpWXhpWj9EPgq7wl2hF2Oe40F6XhUtZR0v3iv9vHU9KDXOGGVAQa7mmyhvYNoi8kOyKU)
 
@@ -445,7 +445,7 @@ App.module consists of 6 files:
 
 You are going to want to see what your application looks like while you work on it so you can view any changes being made.
 
--   To run the server: 
+To run the server: 
 
 -   cd server (If the server is already running this command will not work and say the local host is already running, this also applies if you have the server running in another terminal window).
 
@@ -467,21 +467,21 @@ IMPORTANT:  When you want to close VS Code and you have run the client and serv
 
 *   Component.html
 
--   Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
+   *Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
 
 If a user is providing an email, you can make something like "User's email: (insert here)." Different users will have different emails, but the first part will remain the same. This isn't restricted to just email, any information that the users provide can be displayed if you write the right methods.
 
 ![](https://lh3.googleusercontent.com/V3ip2MI5w1C_FCJ0FpuY8tNZeWJ2o5R_i8B72TgwQOa3pd8PgRvbLZnZut97MRb5ykxitCgYWCM_EAZklM9-7JWpBW-i-9diZDH8ssCXZccfI31bnkH7FSOCWkpR8U0rhkjzm9pz)
 
--   This file is also where you can add buttons on a webpage. What happens with these buttons are defined in the component.ts file. These buttons (when clicked) can bring the user to another page, so you're able to add a link to this file as a button.
+   *This file is also where you can add buttons on a webpage. What happens with these buttons are defined in the component.ts file. These buttons (when clicked) can bring the user to another page, so you're able to add a link to this file as a button.
 
 ![](https://lh3.googleusercontent.com/QqN5rTbHMmZj_59Muev4VotOSuJeKC7nsQVx-37VNEkw8Q9RZdJJKmq98rJXumXnJndl9xoL6yu1XZQcFd2JXzm5IWEj902tfGB2sAefB5RlNFapKCu-RIujrNWKuOEC5ZjPdFLN)
 
 *   Component.ts
 
--   This is the TypeScript file for a component and where the methods for a component are written. As mentioned before, this is where you also define variables which are crucial, because a lot of bugs will most likely result from a variable not being defined or being utilized incorrectly.
+   *This is the TypeScript file for a component and where the methods for a component are written. As mentioned before, this is where you also define variables which are crucial, because a lot of bugs will most likely result from a variable not being defined or being utilized incorrectly.
 
--   This TypeScript file is similar to a class, where it's methods are defined, and you can utilize them in other places with the defined variables. This is also where variables are initialized in the ngOnInit method. Those variables could be undefined with ngOnDestroy.
+   *This TypeScript file is similar to a class, where it's methods are defined, and you can utilize them in other places with the defined variables. This is also where variables are initialized in the ngOnInit method. Those variables could be undefined with ngOnDestroy.
 
    Here's what you usually find in this file:
 
@@ -507,17 +507,17 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 *   Component.spec.ts
 
--   This file is used to test the methods that are written in the component.ts file. It checks to make sure that the methods are behaving how you want them to. Because the tests are local (within VS Code) they can't actually reflect your web application. So we utilize mock testing to test our methods with "fake" data that we create. 
+   *This file is used to test the methods that are written in the component.ts file. It checks to make sure that the methods are behaving how you want them to. Because the tests are local (within VS Code) they can't actually reflect your web application. So we utilize mock testing to test our methods with "fake" data that we create. 
 
 *   Mock Testing
 
--   Testing a component is an important part of this class and the functionality of the project (it also helps with debugging). Mock testing data is in the (nameHere).service.mock.ts file. In the component.spec.ts file, after all the imports, there is a describe method that defines the imports.
+   *Testing a component is an important part of this class and the functionality of the project (it also helps with debugging). Mock testing data is in the (nameHere).service.mock.ts file. In the component.spec.ts file, after all the imports, there is a describe method that defines the imports.
 
--   There is also a beforeEach method that does something before testing a method. If a beforeEach method has "async" then whatever is defined in the beforeEach will happen asynchronously from the other tests.
+   *There is also a beforeEach method that does something before testing a method. If a beforeEach method has "async" then whatever is defined in the beforeEach will happen asynchronously from the other tests.
 
--   The tests start with an "it" statement telling what the method should do or what it should output. Commonly seen are toBeTruthy() and toBeFalsy() which say if something should be true or false. equals() is also another common statement in a test. 
+   *The tests start with an "it" statement telling what the method should do or what it should output. Commonly seen are toBeTruthy() and toBeFalsy() which say if something should be true or false. equals() is also another common statement in a test. 
 
--   As mentioned before, each test looks at the file (name).service.mock.ts. This is where all the "fake" data is defined and what the tests refer to. This file is like a "fake" database of information that you are testing.
+   *As mentioned before, each test looks at the file (name).service.mock.ts. This is where all the "fake" data is defined and what the tests refer to. This file is like a "fake" database of information that you are testing.
 
 ![](https://lh3.googleusercontent.com/j-DP0j7KPMDI05aoDDdruDtpCWol_iww5fqUcRVK7eYPTiJxhJ64HxDKGu-ENPGbq1cPN69ZuQNQEZwVHeNLzLhVjm_v2QtEWGW7j9GMLNJ6rsJMA-x3q5EnT5ut7tHtU7PtRo61)
 
@@ -525,71 +525,71 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 *   Component.scss
 
--   This is the CSS file for a component. It styles the text along with the pieces of the component itself. You can add color, borders, background images, dropdown menus, etc. This website has a lot of CSS stuff that you can quickly apply: <https://www.w3schools.com/css/css_border.asp>. 
+   *This is the CSS file for a component. It styles the text along with the pieces of the component itself. You can add color, borders, background images, dropdown menus, etc. This website has a lot of CSS stuff that you can quickly apply: <https://www.w3schools.com/css/css_border.asp>. 
 
--   CSS is an overlooked facet of a web application. (This will allow you to give your application a professional setting and look for the user). If something looks clean and professional, it's bound to do well, and it gives a sense of confidence. Avoid going over the top with it and ending up with a cluttered UI, but there are enough options to make your web application stand out.
+   *CSS is an overlooked facet of a web application. (This will allow you to give your application a professional setting and look for the user). If something looks clean and professional, it's bound to do well, and it gives a sense of confidence. Avoid going over the top with it and ending up with a cluttered UI, but there are enough options to make your web application stand out.
 
 *   Creating an Object
 
--   A TypeScript file (not attached to a single component) can be used to define an object. So if you want to create an object that resembled an email, you would declare that the object "email" has a date, body/message, subject line, sent from, and sent to fields. The name for this file would then be "email.ts" So any component that utilizes this object (by importing it) can access any of the fields. 
+   *A TypeScript file (not attached to a single component) can be used to define an object. So if you want to create an object that resembled an email, you would declare that the object "email" has a date, body/message, subject line, sent from, and sent to fields. The name for this file would then be "email.ts" So any component that utilizes this object (by importing it) can access any of the fields. 
 
--   Each field has a type. Some common ones are string, boolean, etc. You also have the ability to make user defined types.
+   *Each field has a type. Some common ones are string, boolean, etc. You also have the ability to make user defined types.
 
--   Try to think of this file as multiple people agreeing to speak in the same language. 
+   *Try to think of this file as multiple people agreeing to speak in the same language. 
 
 ![](https://lh6.googleusercontent.com/uDx6I4Ectt5WT_UpD9p1MVyA5Sj879FY2ZNxkXzJxIcyN41UCntwmRO2UQvjyXxAE_2h47qgVI64pLT30aWYoMvXt3MDzq-9je5qg7ciIakDFIVeRAgFA-XgehSYT3NaryBsBCRZ)
 
 *   Services
 
--   Services will be an important part of your web application. A service file has a bunch of methods that can be utilized by any component. Unlike a service file, TypeScript files for a component are specifically for that component. 
+   *Services will be an important part of your web application. A service file has a bunch of methods that can be utilized by any component. Unlike a service file, TypeScript files for a component are specifically for that component. 
 
--   Components that use services, have to share the same information. For example, if two different component files utilize a service, and that service has the variable "note", then "note" is defined the same in both files. To declare that a component is using a service, you need to import it. 
+   *Components that use services, have to share the same information. For example, if two different component files utilize a service, and that service has the variable "note", then "note" is defined the same in both files. To declare that a component is using a service, you need to import it. 
 
 ![](https://lh3.googleusercontent.com/lKrRKI_mwL9hhCs0WIUnOWe_pb6GiNnIVPj35n3EabbbdhkZo5OTTN2wPIA9zvCUq_dyYPPen15DPmuFSPX2avXBmCV0X5ogVu8McH3baMlCOYWZZA4lZI77w5tgZ5_N1DJTe63s)
 
--   Spec files for components also need to import services so it can be tested for a component.
+   *Spec files for components also need to import services so it can be tested for a component.
 
--   Services also have spec files to test the methods. NOTE: Inside of these spec files, you create the data that you want the service to test.
+   *Services also have spec files to test the methods. NOTE: Inside of these spec files, you create the data that you want the service to test.
 
 ![](https://lh3.googleusercontent.com/mgdqrIzyvgfZ7_EgocHmAO0rJA700RTbGIeSH5WbIiqm9ZGhJbsfCDNjgTLPNyvqzRILThGEVS9egy8dJpQek8OrauNiUUZ8hWTTqBoYuaQfj8bcAQuGiODmnuE5PxuQCb-BadRx)
 
 #### Server Side Files
 
--   Controller
+*   Controller
 
--   Remember that the server is a way for a user to access specific information from a database. So this controller file has methods that access and change information in a database.
+   *Remember that the server is a way for a user to access specific information from a database. So this controller file has methods that access and change information in a database.
 
--   The controller also has a .java file which is similar to an object file like "email.ts" on the client side. It's where an object/variable is defined and it can be utilized in the methods. 
+   *The controller also has a .java file which is similar to an object file like "email.ts" on the client side. It's where an object/variable is defined and it can be utilized in the methods. 
 
 ![](https://lh5.googleusercontent.com/jcoGLiUu06fZ_lsjPeBepysUj7_KlQQKlsw-BL4WBPPqUzngEOoWXav1jdfhPeO7FK96MI0B-ZqCmh-fJde5MDXKWMGcqhyBCETcYTJlxn27-z2ySqzZIDOIfLAOfAPi-SAAWmV5)
 
--   After the .java file comes the Controller file, which is written in Java. As mentioned earlier, this file has methods that work within the parameters you set in the .java file. It "talks" to the database and can retrieve or change information in the database.
+   *After the .java file comes the Controller file, which is written in Java. As mentioned earlier, this file has methods that work within the parameters you set in the .java file. It "talks" to the database and can retrieve or change information in the database.
 
--   If you have taken Data Structures, you will notice the syntax is a little more complicated, but is still familiar enough that it's understandable.
+   *If you have taken Data Structures, you will notice the syntax is a little more complicated, but is still familiar enough that it's understandable.
 
 ![](https://lh4.googleusercontent.com/Nmk5XKogqwpiseUId43y7YN6sbVsJqAVlI2X5JdPnvGyzXrrp82YNaZ-aPrliEnYIVyjkrNoowZpSAa_OCUEOfyMU17LlJQ8-W3L411YerZVAifZ3gqyAm_cZVuPqxmI4Nwgz1oM)
 
--   Controller specs
+*   Controller specs
 
--   The Controller also needs to be tested so you know the server is doing what you want it to. You will configure these tests by writing JUnit tests. 
+   *The Controller also needs to be tested so you know the server is doing what you want it to. You will configure these tests by writing JUnit tests. 
 
--   Like in the client, this test file also has @BeforeEach to declare what is instantiated before each test.
+   *Like in the client, this test file also has @BeforeEach to declare what is instantiated before each test.
 
--   The data that you test is also something you define at the beginning of this file. You're essentially creating a mock database.When you add an object to a database, it must have the same fields as it does in the .java file. So our email object would require the fields body/message, subject, etc.
+   *The data that you test is also something you define at the beginning of this file. You're essentially creating a mock database.When you add an object to a database, it must have the same fields as it does in the .java file. So our email object would require the fields body/message, subject, etc.
 
 ![](https://lh4.googleusercontent.com/aYfTprPaNJGVW3hVYQGAtjLrApozzwt8hhZCnuJu2MgflnGGqz2cmBOZuO498JseRl_oUi3MU00apZKmEko1y39wWLx7Pfyezb9a2l0acCCsYuko5573SRPE3DqvftQFCYCVoAJo)
 
--   Each test should have an @Test to declare it's a test. It will also provide a "Run Test | Debug Test" option. Clicking Run Test will either give you a check mark or an X (failure). NOTE: Just because a test passes, does not always mean it does what you want.
+   *Each test should have an @Test to declare it's a test. It will also provide a "Run Test | Debug Test" option. Clicking Run Test will either give you a check mark or an X (failure). NOTE: Just because a test passes, does not always mean it does what you want.
 
--   At times a failing test can be the result of how the test itself is written but most likely it is an issue with the method. Being able to read why a test is failing, and possibly which line is causing the error, is a necessary skill in order to debug your code.
+   *At times a failing test can be the result of how the test itself is written but most likely it is an issue with the method. Being able to read why a test is failing, and possibly which line is causing the error, is a necessary skill in order to debug your code.
 
 ![](https://lh3.googleusercontent.com/ba8yngm7cujAG2R48rRVvsgyGbDiqrK2STphth_HzfS6e9DYs5Mv-jbrA6eqOhV6vsXTAqPvFHOatnv545qevUQUuz3fFtMe37jq1VqvAmJtHM3M3WnwaWeM9tviUxDLdgmmLUQJ)
 
--   JUnit testing can be tricky and the syntax can cause headaches at times, so this is a topic we would suggest you ask your professor(s) about if you need further clarification.
+   *JUnit testing can be tricky and the syntax can cause headaches at times, so this is a topic we would suggest you ask your professor(s) about if you need further clarification.
 
 #### Databases 
 
--   About Databases
+About Databases:
 
 -   Remember that a database works as a bank of information/data. You are able to add, remove, or alter these entries in the database.
 
@@ -635,43 +635,43 @@ To use it, you first need to download the extension along with the Live Share Wh
 
 *   How is this class similar to Data Structures?
 
--   Software Design builds off of concepts in Data Structures. You should have used Java/IntelliJ in Data Structures, and writing code for the server is also written in the same language. JUnit testing is also another thing you should have have at least been introduced to in Data Structures which you will practice more in this class
+   *Software Design builds off of concepts in Data Structures. You should have used Java/IntelliJ in Data Structures, and writing code for the server is also written in the same language. JUnit testing is also another thing you should have have at least been introduced to in Data Structures which you will practice more in this class
 
 *   How much time do I need to dedicate to this class?
 
--   Well, to put it bluntly, a lot. Every group put in dozens of sleepless nights into this class. It takes awhile to understand what each part does, and then putting it altogether in a short period of time is not easy for anyone. This will certainly be a class that will test your character, patience, and work ethic.
+   *Well, to put it bluntly, a lot. Every group put in dozens of sleepless nights into this class. It takes awhile to understand what each part does, and then putting it altogether in a short period of time is not easy for anyone. This will certainly be a class that will test your character, patience, and work ethic.
 
 *   Yikes, everyone seems like they know what they're doing and I'm stuck. What should I do?
 
--   The best thing you can do for yourself is to ask questions. Ask the professor, the TA, or other classmates. This is a learning experience. No book or text can help you more than actually playing with the code, thinking about how the moving parts work, and asking questions about what you don't know. There is not always a solid answer, but there could be insight into possible approaches. When you reach your second or third iteration, you will have become more of an expert about the code than the professor(s), because you have undoubtedly tangled with it more, and understand how it functions. We can assure you, your classmates are equally and or more confused as you are, so learn together and help each other. Remember everybody is stronger in some areas than others so while some classmates may seem ahead of the game there is almost certainly something unique you can bring to the team.
+   *The best thing you can do for yourself is to ask questions. Ask the professor, the TA, or other classmates. This is a learning experience. No book or text can help you more than actually playing with the code, thinking about how the moving parts work, and asking questions about what you don't know. There is not always a solid answer, but there could be insight into possible approaches. When you reach your second or third iteration, you will have become more of an expert about the code than the professor(s), because you have undoubtedly tangled with it more, and understand how it functions. We can assure you, your classmates are equally and or more confused as you are, so learn together and help each other. Remember everybody is stronger in some areas than others so while some classmates may seem ahead of the game there is almost certainly something unique you can bring to the team.
 
 *   I accidentally forgot to do Ctrl+C in the terminal before I closed VS Code and now it says the session is locked
 
--   We did this way too many times. Here is a potential fix that worked for us: <https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command>
+   *We did this way too many times. Here is a potential fix that worked for us: <https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command>
 
 *   I can't find the error where my code is breaking
 
--   This is the thing that will keep you up at night. Debugging is frustrating and annoying because the error could be as small as a missing a comma, a mis-named variable, or other minute overlooked pieces. 
+   *This is the thing that will keep you up at night. Debugging is frustrating and annoying because the error could be as small as a missing a comma, a mis-named variable, or other minute overlooked pieces. 
 
--   If the error responds with a line of code that is potentially the problem, it's worth going to that line and tracing backwards. This means going back through the chain of interactions that let you create that line of code. So if the line has a variable, go to that variable and see if it's defined. If the line uses a method, go to the method and see if it's written correctly. Hopefully, you can find and correct your error. If something appears to be incorrect with a method but you can not pin down what it is write a test! This will help you find the error as well as reinforce good habits for writing tested code.
+   *If the error responds with a line of code that is potentially the problem, it's worth going to that line and tracing backwards. This means going back through the chain of interactions that let you create that line of code. So if the line has a variable, go to that variable and see if it's defined. If the line uses a method, go to the method and see if it's written correctly. Hopefully, you can find and correct your error. If something appears to be incorrect with a method but you can not pin down what it is write a test! This will help you find the error as well as reinforce good habits for writing tested code.
 
--   If you don't think you made a mistake by tracing backwards, maybe stop and ask, does the approach I'm using make sense or am I missing something? Is there an error or mistake in logic? If you're unsure, ask your professor or a classmate about your approach and see what their opinion of it is. (It is a strangely relieving feeling to hear, "Oh, your approach is on the right track, you just forgot to include these things").
+   *If you don't think you made a mistake by tracing backwards, maybe stop and ask, does the approach I'm using make sense or am I missing something? Is there an error or mistake in logic? If you're unsure, ask your professor or a classmate about your approach and see what their opinion of it is. (It is a strangely relieving feeling to hear, "Oh, your approach is on the right track, you just forgot to include these things").
 
--   Oftentimes, it might just come down to having another pair of eyes looking at the code. This happens a lot more than you can imagine, so don't be frustrated because believe us when we say it happens to everyone.
+   *Oftentimes, it might just come down to having another pair of eyes looking at the code. This happens a lot more than you can imagine, so don't be frustrated because believe us when we say it happens to everyone.
 
 *   How much CSS is enough?
 
--   From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
+   *From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
 
 *   I feel overwhelmed right now and I don't know what to do
 
--   First and foremost, know that it is ok. It's a common feeling. A good first step is to start with the small things. Take the time to really understand one or two ideas/concepts and how they work. Ask questions about what you don't understand. Once you start to see how the details function you can put together the bigger picture.
+   *First and foremost, know that it is ok. It's a common feeling. A good first step is to start with the small things. Take the time to really understand one or two ideas/concepts and how they work. Ask questions about what you don't understand. Once you start to see how the details function you can put together the bigger picture.
 
--   We should also say, this is not a walk in the park kind of class. You will have to put time, and genuine effort into this class if you want to do ok, even more if you want to excel. Don't sit back and rely on your team, that is the worst thing you can do for your learning. Even if you just do a couple things, do them well, and seek to do more. Being proactive about accepting tasks and problems is a great way to learn the material and even if you do not succeed right away you can set up the framework in order for your team to assist you.
+   *We should also say, this is not a walk in the park kind of class. You will have to put time, and genuine effort into this class if you want to do ok, even more if you want to excel. Don't sit back and rely on your team, that is the worst thing you can do for your learning. Even if you just do a couple things, do them well, and seek to do more. Being proactive about accepting tasks and problems is a great way to learn the material and even if you do not succeed right away you can set up the framework in order for your team to assist you.
 
 *   How Many Questions is Too Many Questions?
 
--   If you are confused about a concept or a bug it is best to ask questions early and often. Don't be ashamed or scared, your question may benefit everyone. Banging your head against the wall until the situation is solved can be very time consuming and may not lead to the best solution. Asking questions early can save you time and allow you to move on to other tasks.
+   *If you are confused about a concept or a bug it is best to ask questions early and often. Don't be ashamed or scared, your question may benefit everyone. Banging your head against the wall until the situation is solved can be very time consuming and may not lead to the best solution. Asking questions early can save you time and allow you to move on to other tasks.
 
 #### Remote programming
 
