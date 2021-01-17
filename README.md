@@ -125,7 +125,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   A list of common terminal commands
 
-Github(#github-anchor)
+[Github](#github-anchor)
 
 The Main Branch
 
