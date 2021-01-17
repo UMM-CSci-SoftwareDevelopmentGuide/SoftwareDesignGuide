@@ -94,7 +94,6 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 -   VS Live Share
 
- |
 |
 
 <a href="#GitKraken">Git/GitKraken</a>
@@ -402,13 +401,13 @@ App.module is like the foundation of a web application, think of it as the brain
 
 App.module consists of 6 files:
 
--   App-routing.module.ts
+*   App-routing.module.ts
 
 -   If you are adding a component that requires the user to access another page other than the main application page (which you will eventually have to do) you need to define that path here. The home page itself has a url, so a new page will need a new url/path, which you define here (It's more useful if you create the component first in the component.ts file to avoid naming errors).
 
 ![](https://lh3.googleusercontent.com/DsYDIHYWZQ6Wlh2dEhaL2IbHuc71U2HTLpyQ_iqUd0QNnOYz1teHQr6MkyRxBxUc_AfIhP1_K5YT3W8KeLz7ozX7YXnFHOjn7Zayfesly7Gu8X0bX6M2_UYC7cD0LdeEMUW-PTek)
 
--   App.component.html
+*   App.component.html
 
 -   This is the file that controls what text and images, go on the specified page of your web application. It also has a variety of other features that you can explore such as adding a toggle button.
 
@@ -416,11 +415,11 @@ App.module consists of 6 files:
 
 ![](https://lh6.googleusercontent.com/PZFHyhnh1BbnZe9uFm564rd8ST9h0QYttqbqBW2hxJ3A-lfZPAM5lC24K98Ksk2wNHDISbI5NJeciQZ7Fnpn-23Ka3E8xYQrKVClLLd5TjJPoDENL97lsdnJkNRwrmIVU92-y7Im)
 
--   App.component.scss
+*   App.component.scss
 
 -   This file controls the CSS for the html which allows visual customization for certain aspects of the web page, such as changing the color of buttons.
 
--   App.component.spec.ts
+*   App.component.spec.ts
 
 -   This file tests the methods in the app.component.ts file.
 
@@ -428,13 +427,13 @@ App.module consists of 6 files:
 
 ![](https://lh4.googleusercontent.com/L0-0NbUeWpvLnKPChUg_vmswl0SzFGUL5maI9_yBcVHiyVazOmrz6vngvQhrIC-zx9Q8ovOB1tDHJTKTiZCTmyOEQzrr-3PKEG0Hb1kzAqfUlDLWiv_Hx9Cs7NP_-ON9BU4iDgWt)
 
--   App.component.ts
+*   App.component.ts
 
 -   This file (along with all other component.ts files) are very important. Here, you can create methods that move data/information, which essentially controls the functionality of the component. Each file on the client side is written in TypeScript which is a language with its own syntax. The files for the server are written in Java which you should have some familiarity with and will be noted by ".java" in the file name.
 
 ![](https://lh4.googleusercontent.com/ZTZLKobk9hLMomijKM7ZtzREaB9V4Fx_Ixs9r3C-RAulxIt50EM77n4-XQdSw7Bxuj9g3teQQNLGt66Z_zDbr1f28INDUcbswOHHb4ZHwgY8vt5JF2WqbIgQCT-mAbUetK8OX8-w)
 
--   App.module.ts
+*   App.module.ts
 
 -   In this file, you must import and declare each component or it will not work. It is small, but it is necessary for the files to communicate and function.
 
@@ -466,9 +465,9 @@ IMPORTANT:  When you want to close VS Code and you have run the client and serv
 
 #### All about Components
 
--   Component.html
+*   Component.html
 
-Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
+-   Files that end with component.html provide the text for a component, such as what words will go on a button (log-in, etc.). It is possible to change the characteristics of the text like making a word bold or choosing a font but this is usually best handled with CSS.
 
 If a user is providing an email, you can make something like "User's email: (insert here)." Different users will have different emails, but the first part will remain the same. This isn't restricted to just email, any information that the users provide can be displayed if you write the right methods.
 
@@ -478,13 +477,13 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 ![](https://lh3.googleusercontent.com/QqN5rTbHMmZj_59Muev4VotOSuJeKC7nsQVx-37VNEkw8Q9RZdJJKmq98rJXumXnJndl9xoL6yu1XZQcFd2JXzm5IWEj902tfGB2sAefB5RlNFapKCu-RIujrNWKuOEC5ZjPdFLN)
 
--   Component.ts
+*   Component.ts
 
 -   This is the TypeScript file for a component and where the methods for a component are written. As mentioned before, this is where you also define variables which are crucial, because a lot of bugs will most likely result from a variable not being defined or being utilized incorrectly.
 
 -   This TypeScript file is similar to a class, where it's methods are defined, and you can utilize them in other places with the defined variables. This is also where variables are initialized in the ngOnInit method. Those variables could be undefined with ngOnDestroy.
 
--   Here's what you usually find in this file:
+   Here's what you usually find in this file:
 
 -   Importing the necessary routes, services, etc.
 
@@ -506,11 +505,11 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 ![](https://lh3.googleusercontent.com/oqFFLPrq1jACKVp0i8JfSxUw4oTylCNlSQ04dxPo1eDKkXBuL1_WXi0exPHcXPWDhQzhVfy6H_SVxK6k76DhimXfuSNwJzeD1Xra0ob2F3INSSaXu7Oc-2wx0Sw-olg30kZQjwTY)
 
--   Component.spec.ts
+*   Component.spec.ts
 
 -   This file is used to test the methods that are written in the component.ts file. It checks to make sure that the methods are behaving how you want them to. Because the tests are local (within VS Code) they can't actually reflect your web application. So we utilize mock testing to test our methods with "fake" data that we create. 
 
--   Mock Testing
+*   Mock Testing
 
 -   Testing a component is an important part of this class and the functionality of the project (it also helps with debugging). Mock testing data is in the (nameHere).service.mock.ts file. In the component.spec.ts file, after all the imports, there is a describe method that defines the imports.
 
@@ -524,13 +523,13 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 ![](https://lh4.googleusercontent.com/65RTJfv-1_H0efJENh5xOxAsrVqpRBKMSde1bcKMnJyveoXSZaU6NQHd7Iof3i6lAHDdKvWG_IwX6Ovjvf1XfyH4C1yz_1uiRx9TJ--g3_mzFGcJBZm8EZ_uDOmf83j5JQWiqtYg)
 
--   Component.scss
+*   Component.scss
 
 -   This is the CSS file for a component. It styles the text along with the pieces of the component itself. You can add color, borders, background images, dropdown menus, etc. This website has a lot of CSS stuff that you can quickly apply: <https://www.w3schools.com/css/css_border.asp>. 
 
 -   CSS is an overlooked facet of a web application. (This will allow you to give your application a professional setting and look for the user). If something looks clean and professional, it's bound to do well, and it gives a sense of confidence. Avoid going over the top with it and ending up with a cluttered UI, but there are enough options to make your web application stand out.
 
--   Creating an Object
+*   Creating an Object
 
 -   A TypeScript file (not attached to a single component) can be used to define an object. So if you want to create an object that resembled an email, you would declare that the object "email" has a date, body/message, subject line, sent from, and sent to fields. The name for this file would then be "email.ts" So any component that utilizes this object (by importing it) can access any of the fields. 
 
@@ -540,7 +539,7 @@ If a user is providing an email, you can make something like "User's email: (ins
 
 ![](https://lh6.googleusercontent.com/uDx6I4Ectt5WT_UpD9p1MVyA5Sj879FY2ZNxkXzJxIcyN41UCntwmRO2UQvjyXxAE_2h47qgVI64pLT30aWYoMvXt3MDzq-9je5qg7ciIakDFIVeRAgFA-XgehSYT3NaryBsBCRZ)
 
--   Services
+*   Services
 
 -   Services will be an important part of your web application. A service file has a bunch of methods that can be utilized by any component. Unlike a service file, TypeScript files for a component are specifically for that component. 
 
@@ -634,23 +633,23 @@ To use it, you first need to download the extension along with the Live Share Wh
 
 ### <a name="FAQ">FAQ's/Miscellaneous</a>
 
--   How is this class similar to Data Structures?
+*   How is this class similar to Data Structures?
 
 -   Software Design builds off of concepts in Data Structures. You should have used Java/IntelliJ in Data Structures, and writing code for the server is also written in the same language. JUnit testing is also another thing you should have have at least been introduced to in Data Structures which you will practice more in this class
 
--   How much time do I need to dedicate to this class?
+*   How much time do I need to dedicate to this class?
 
 -   Well, to put it bluntly, a lot. Every group put in dozens of sleepless nights into this class. It takes awhile to understand what each part does, and then putting it altogether in a short period of time is not easy for anyone. This will certainly be a class that will test your character, patience, and work ethic.
 
--   Yikes, everyone seems like they know what they're doing and I'm stuck. What should I do?
+*   Yikes, everyone seems like they know what they're doing and I'm stuck. What should I do?
 
 -   The best thing you can do for yourself is to ask questions. Ask the professor, the TA, or other classmates. This is a learning experience. No book or text can help you more than actually playing with the code, thinking about how the moving parts work, and asking questions about what you don't know. There is not always a solid answer, but there could be insight into possible approaches. When you reach your second or third iteration, you will have become more of an expert about the code than the professor(s), because you have undoubtedly tangled with it more, and understand how it functions. We can assure you, your classmates are equally and or more confused as you are, so learn together and help each other. Remember everybody is stronger in some areas than others so while some classmates may seem ahead of the game there is almost certainly something unique you can bring to the team.
 
--   I accidentally forgot to do Ctrl+C in the terminal before I closed VS Code and now it says the session is locked
+*   I accidentally forgot to do Ctrl+C in the terminal before I closed VS Code and now it says the session is locked
 
 -   We did this way too many times. Here is a potential fix that worked for us: <https://stackoverflow.com/questions/39091735/port-4200-is-already-in-use-when-running-the-ng-serve-command>
 
--   I can't find the error where my code is breaking
+*   I can't find the error where my code is breaking
 
 -   This is the thing that will keep you up at night. Debugging is frustrating and annoying because the error could be as small as a missing a comma, a mis-named variable, or other minute overlooked pieces. 
 
@@ -660,17 +659,17 @@ To use it, you first need to download the extension along with the Live Share Wh
 
 -   Oftentimes, it might just come down to having another pair of eyes looking at the code. This happens a lot more than you can imagine, so don't be frustrated because believe us when we say it happens to everyone.
 
--   How much CSS is enough?
+*   How much CSS is enough?
 
 -   From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
 
--   I feel overwhelmed right now and I don't know what to do
+*   I feel overwhelmed right now and I don't know what to do
 
 -   First and foremost, know that it is ok. It's a common feeling. A good first step is to start with the small things. Take the time to really understand one or two ideas/concepts and how they work. Ask questions about what you don't understand. Once you start to see how the details function you can put together the bigger picture.
 
 -   We should also say, this is not a walk in the park kind of class. You will have to put time, and genuine effort into this class if you want to do ok, even more if you want to excel. Don't sit back and rely on your team, that is the worst thing you can do for your learning. Even if you just do a couple things, do them well, and seek to do more. Being proactive about accepting tasks and problems is a great way to learn the material and even if you do not succeed right away you can set up the framework in order for your team to assist you.
 
--   How Many Questions is Too Many Questions?
+*   How Many Questions is Too Many Questions?
 
 -   If you are confused about a concept or a bug it is best to ask questions early and often. Don't be ashamed or scared, your question may benefit everyone. Banging your head against the wall until the situation is solved can be very time consuming and may not lead to the best solution. Asking questions early can save you time and allow you to move on to other tasks.
 
