@@ -52,7 +52,7 @@ At the beginning of the course, it is common to feel like you are overwhelmed wh
 
 *   How much CSS is enough?
 
-   From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Find a balance, do enough to where it makes sense, but not too much that it distracts the user from your actual web application.
+   From our experience, CSS is important, but not crucial. What we mean is that CSS is necessary to make a professional looking web application. It can really compliment the user experience, but do not overdo it or spend great lengths of time on it. Try to find a suitable balance so it makes sense and presents a professional atmosphere, but not so much that it distracts the user from the application itself.
 
 *   I feel overwhelmed right now and I don't know what to do
 
