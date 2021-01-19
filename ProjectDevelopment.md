@@ -1,6 +1,6 @@
 # Project Development
 
-## Agile Development/ZenHub
+## ZenHub
 
 Zenhub is a project management tool used to organize your project into epics, stories, and milestones. A milestone is essentially a major goal for the project that will include a start and end date. After a milestone will come epics. These are the pieces that will make up the meat of your project; most often these are features in your projects or significant pieces of labs. You could consider these as an umbrella of ideas, most often features that include smaller pieces regarding the functionality of the idea that include numerous smaller parts. Finally is the step of creating stories/issues, these are the smaller pieces mentioned earlier that make up an epic. Issues are what you assign to people in your group. While testing is not worthy of its own issue it is extremely important which will be mentioned later. This style of development will help you organize your project within your team and serve as an advanced checklist. The UI provides a visual representation of your work. This is done by first setting up the project and after some progress, tools like the burndown chart (shown below) can be useful to evaluate your progress towards completing your milestone. 
 
